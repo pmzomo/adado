@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programs – ADADO</title>
+  <meta name="description" content="Explore ADADO's programs in sustainable agriculture, education, food security, civic engagement, and community development across Kenya and North Carolina." />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: { deep: '#006600', mid: '#1a8c1a', light: '#e8f5e9' },
+            gold:  { DEFAULT: '#D4A017', light: '#fff8e1' },
+            red:   { kenya: '#BB0000' },
+            dark:  { DEFAULT: '#0f1a0f', mid: '#1c2b1c' },
+          },
+          fontFamily: { heading: ['"Playfair Display"', 'serif'], body: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-body">
+
+  <div id="preloader"><img src="assets/img/logo.png" alt="ADADO" /><div class="bar-wrap"><div class="bar-fill"></div></div></div>
+  <button id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="nav-logo flex items-center gap-3">
+        <img src="assets/img/logo.png" alt="ADADO Logo" />
+        <div class="hidden md:block">
+          <div style="color:var(--gold); font-family:'Playfair Display',serif; font-weight:700; font-size:1.1rem; line-height:1;">ADADO</div>
+          <div style="color:rgba(255,255,255,0.6); font-size:0.65rem; letter-spacing:0.1em;">Kamba Diaspora Org.</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html"        class="nav-link">Home</a>
+        <a href="about.html"        class="nav-link">About Us</a>
+        <a href="programs.html"     class="nav-link active">Programs</a>
+        <a href="news-events.html"  class="nav-link">News &amp; Events</a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="contact.html"      class="nav-link">Contact</a>
+      </div>
+      <div class="hidden lg:block"><a href="get-involved.html#donate" class="btn-gold text-sm py-2 px-5"><i class="fas fa-heart"></i> Donate</a></div>
+      <button id="menu-btn" class="lg:hidden text-white text-xl p-2"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Home</a><a href="about.html">About Us</a><a href="programs.html">Programs</a>
+      <a href="news-events.html">News &amp; Events</a><a href="get-involved.html">Get Involved</a><a href="contact.html">Contact</a>
+      <a href="get-involved.html#donate" style="color:var(--gold); font-weight:700;">♥ Donate Now</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background-image:url('assets/img/hero-programs.jpg');">
+    <div class="page-hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="section-badge badge-green">What We Do</span>
+      <h1 class="font-heading text-4xl lg:text-5xl font-bold text-white mt-2 mb-4">Our Programs</h1>
+      <p class="text-white/70 max-w-2xl mx-auto">Targeted initiatives creating lasting change across agriculture, education, civic life, and community wellbeing.</p>
+      <div class="mt-6 flex items-center justify-center gap-2 text-sm" style="color:rgba(255,255,255,0.5);">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span style="color:var(--gold);">Programs</span>
+      </div>
+    </div>
+  </div>
+  <div class="kenya-strip"></div>
+
+  <!-- ==================== PROGRAM NAV ==================== -->
+  <div style="background:white; border-bottom:1px solid #e5e7eb; position:sticky; top:70px; z-index:100; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex overflow-x-auto gap-6 py-4" style="scrollbar-width:none;">
+        <a href="#agriculture" style="white-space:nowrap; color:var(--green-deep); font-weight:600; font-size:0.9rem; padding:6px 0; border-bottom:2px solid var(--green-deep); text-decoration:none;">🌾 Agriculture</a>
+        <a href="#education"   style="white-space:nowrap; color:var(--gray); font-weight:500; font-size:0.9rem; padding:6px 0; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--green-deep)'" onmouseout="this.style.color='var(--gray)'">🎓 Education</a>
+        <a href="#civic"       style="white-space:nowrap; color:var(--gray); font-weight:500; font-size:0.9rem; padding:6px 0; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--green-deep)'" onmouseout="this.style.color='var(--gray)'">🤝 Civic Engagement</a>
+        <a href="#food"        style="white-space:nowrap; color:var(--gray); font-weight:500; font-size:0.9rem; padding:6px 0; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--green-deep)'" onmouseout="this.style.color='var(--gray)'">💧 Food &amp; Water</a>
+        <a href="#faith"       style="white-space:nowrap; color:var(--gray); font-weight:500; font-size:0.9rem; padding:6px 0; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--green-deep)'" onmouseout="this.style.color='var(--gray)'">⛪ Faith Coalitions</a>
+        <a href="#forums"      style="white-space:nowrap; color:var(--gray); font-weight:500; font-size:0.9rem; padding:6px 0; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--green-deep)'" onmouseout="this.style.color='var(--gray)'">🏛️ Town Halls</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== AGRICULTURE ==================== -->
+  <section id="agriculture" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div data-fade-left>
+          <span class="section-badge badge-green">Program 01</span>
+          <h2 class="font-heading text-3xl lg:text-4xl font-bold text-gray-900 mb-5">
+            🌾 Sustainable Agriculture &amp; <span class="text-green">Agri-Technology</span>
+          </h2>
+          <p class="text-gray-600 mb-5 leading-relaxed">
+            The Kamba heartland of Machakos, Kitui, and Makueni faces one of Kenya's most severe drought challenges. ADADO's agriculture program tackles food insecurity head-on through modern, climate-smart farming practices that work <em>with</em> the environment, not against it.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div style="width:32px; height:32px; background:var(--green-light); border-radius:8px; flex-shrink:0; display:flex; align-items:center; justify-content:center;"><i class="fas fa-tint" style="color:var(--green-deep); font-size:0.85rem;"></i></div>
+              <div><h5 class="font-semibold text-gray-900 text-sm">Rainwater Harvesting &amp; Irrigation</h5><p class="text-gray-500 text-xs mt-1">Training farmers in efficient water management systems including sand dams, zai pits, and drip irrigation.</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div style="width:32px; height:32px; background:var(--green-light); border-radius:8px; flex-shrink:0; display:flex; align-items:center; justify-content:center;"><i class="fas fa-seedling" style="color:var(--green-deep); font-size:0.85rem;"></i></div>
+              <div><h5 class="font-semibold text-gray-900 text-sm">Drought-Resistant Crop Varieties</h5><p class="text-gray-500 text-xs mt-1">Introducing and distributing seeds for heat-tolerant crops — cowpeas, sorghum, millet — suited for arid regions.</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div style="width:32px; height:32px; background:var(--green-light); border-radius:8px; flex-shrink:0; display:flex; align-items:center; justify-content:center;"><i class="fas fa-mobile-alt" style="color:var(--green-deep); font-size:0.85rem;"></i></div>
+              <div><h5 class="font-semibold text-gray-900 text-sm">Digital Market Access</h5><p class="text-gray-500 text-xs mt-1">Connecting farmers directly to buyers through mobile platforms — cutting out middlemen and increasing farmer income.</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div style="width:32px; height:32px; background:var(--green-light); border-radius:8px; flex-shrink:0; display:flex; align-items:center; justify-content:center;"><i class="fas fa-cow" style="color:var(--green-deep); font-size:0.85rem;"></i></div>
+              <div><h5 class="font-semibold text-gray-900 text-sm">Livestock Development</h5><p class="text-gray-500 text-xs mt-1">Supporting sustainable goat, cattle, and poultry farming with veterinary training and market linkages.</p></div>
+            </div>
+          </div>
+        </div>
+        <div data-fade-right>
+          <div style="border-radius:20px; overflow:hidden; box-shadow:0 16px 50px rgba(0,0,0,0.15);">
+            <img src="assets/img/agriculture.jpg" alt="Kenya Agriculture" class="w-full" style="height:450px; object-fit:cover;" />
+          </div>
+          <div style="background:var(--green-light); border-radius:12px; padding:1.5rem; margin-top:1.5rem; border-left:4px solid var(--green-deep);">
+            <p style="color:var(--green-deep); font-size:0.9rem; font-style:italic; line-height:1.7;">
+              "When one Kamba farmer thrives, the whole community eats. Our agriculture program is about dignity, food security, and self-sufficiency for every Kamba household."
+            </p>
+            <p style="color:var(--gray); font-size:0.78rem; margin-top:0.5rem;">— ADADO Agriculture Director</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION ==================== -->
+  <section id="education" class="py-20" style="background:var(--light);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div data-fade-right class="order-2 lg:order-1">
+          <div style="border-radius:20px; overflow:hidden; box-shadow:0 16px 50px rgba(0,0,0,0.12);">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=700&q=80" alt="Education Kenya" class="w-full" style="height:420px; object-fit:cover;" />
+          </div>
+        </div>
+        <div data-fade-left class="order-1 lg:order-2">
+          <span class="section-badge badge-gold">Program 02</span>
+          <h2 class="font-heading text-3xl lg:text-4xl font-bold text-gray-900 mb-5">
+            🎓 Centers of Excellence &amp; <span class="text-green">Educational Upliftment</span>
+          </h2>
+          <p class="text-gray-600 mb-5 leading-relaxed">
+            Education is the most powerful tool for generational change. ADADO is establishing Centers of Excellence — purpose-built hubs that combine vocational training, entrepreneurship education, and academic support for Kamba youth in Kenya and North Carolina.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div style="background:white; border-radius:10px; padding:1.25rem; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+              <div style="font-size:1.8rem; margin-bottom:0.5rem;">🏫</div>
+              <h5 class="font-semibold text-gray-900 text-sm mb-1">Vocational Training</h5>
+              <p class="text-gray-500" style="font-size:0.78rem;">Practical skills in carpentry, technology, tailoring, agribusiness, and more.</p>
+            </div>
+            <div style="background:white; border-radius:10px; padding:1.25rem; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+              <div style="font-size:1.8rem; margin-bottom:0.5rem;">📚</div>
+              <h5 class="font-semibold text-gray-900 text-sm mb-1">Scholarship Programs</h5>
+              <p class="text-gray-500" style="font-size:0.78rem;">Financial support for Kamba youth in North Carolina and Kenya pursuing higher education.</p>
+            </div>
+            <div style="background:white; border-radius:10px; padding:1.25rem; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+              <div style="font-size:1.8rem; margin-bottom:0.5rem;">💻</div>
+              <h5 class="font-semibold text-gray-900 text-sm mb-1">Digital Literacy</h5>
+              <p class="text-gray-500" style="font-size:0.78rem;">Computer training, coding bootcamps, and internet literacy for rural communities.</p>
+            </div>
+            <div style="background:white; border-radius:10px; padding:1.25rem; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+              <div style="font-size:1.8rem; margin-bottom:0.5rem;">🚀</div>
+              <h5 class="font-semibold text-gray-900 text-sm mb-1">Entrepreneurship</h5>
+              <p class="text-gray-500" style="font-size:0.78rem;">Business skills, microfinance access, and mentorship for Kamba entrepreneurs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CIVIC ENGAGEMENT ==================== -->
+  <section id="civic" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-fade>
+        <span class="section-badge badge-green">Program 03</span>
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-gray-900">🤝 Civic Engagement &amp; <span class="text-green">Diaspora Responsibility</span></h2>
+        <p class="text-gray-500 mt-3 max-w-2xl mx-auto">We believe that every Kamba in the diaspora has a responsibility — and an opportunity — to contribute to community development back home and in North Carolina.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="program-card" data-fade data-delay="1">
+          <div class="card-img-wrap"><img class="card-img" src="assets/img/civic.jpg" alt="Civic Engagement" /></div>
+          <div class="p-6">
+            <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Diaspora Mentorship</h3>
+            <p class="text-gray-500 text-sm">Connecting successful Kamba professionals in the U.S. with youth in Kenya through structured mentorship programs — sharing skills, knowledge, and life experience.</p>
+          </div>
+        </div>
+        <div class="program-card" data-fade data-delay="2">
+          <div class="card-img-wrap"><img class="card-img" src="assets/img/townhall.jpg" alt="Community Forum" /></div>
+          <div class="p-6">
+            <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Civic Education</h3>
+            <p class="text-gray-500 text-sm">Empowering Kamba community members in North Carolina with civic rights, voter registration guidance, and community advocacy training.</p>
+          </div>
+        </div>
+        <div class="program-card" data-fade data-delay="3">
+          <div class="card-img-wrap"><img class="card-img" src="assets/img/faith.jpg" alt="Youth Leadership" /></div>
+          <div class="p-6">
+            <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Youth Leadership</h3>
+            <p class="text-gray-500 text-sm">Identifying and developing the next generation of Kamba community leaders through structured leadership programs in the U.S. and Kenya.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOD & WATER ==================== -->
+  <section id="food" class="py-20" style="background: linear-gradient(135deg, #006600 0%, #004d00 100%); color:white;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div data-fade-left>
+          <span class="section-badge" style="background:rgba(255,255,255,0.15); color:white;">Program 04</span>
+          <h2 class="font-heading text-3xl lg:text-4xl font-bold text-white mb-5">💧 Food Security &amp; Water Conservation</h2>
+          <p style="color:rgba(255,255,255,0.8); margin-bottom:1.5rem; line-height:1.8;">
+            The counties of Machakos, Kitui, and Makueni face severe water scarcity — a challenge that threatens livelihoods, health, and food security for millions. ADADO's water program works to change this reality permanently.
+          </p>
+          <div class="space-y-4">
+            <div style="background:rgba(255,255,255,0.1); border-radius:10px; padding:1.25rem; border:1px solid rgba(255,255,255,0.15);">
+              <h5 class="font-semibold text-white mb-1">🏗️ Sand Dam Construction</h5>
+              <p style="color:rgba(255,255,255,0.7); font-size:0.88rem;">Funding community-built sand dams that capture rainwater in riverbeds, recharging water tables and providing year-round access to clean water.</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.1); border-radius:10px; padding:1.25rem; border:1px solid rgba(255,255,255,0.15);">
+              <h5 class="font-semibold text-white mb-1">🌦️ Climate Adaptation</h5>
+              <p style="color:rgba(255,255,255,0.7); font-size:0.88rem;">Training communities in climate-smart agriculture — seasonal planning, weather monitoring, and adaptive farming techniques.</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.1); border-radius:10px; padding:1.25rem; border:1px solid rgba(255,255,255,0.15);">
+              <h5 class="font-semibold text-white mb-1">🥗 Nutritional Programs</h5>
+              <p style="color:rgba(255,255,255,0.7); font-size:0.88rem;">Supporting food banks and school feeding programs during drought seasons to ensure children and vulnerable families don't go hungry.</p>
+            </div>
+          </div>
+        </div>
+        <div data-fade-right>
+          <div style="border-radius:20px; overflow:hidden; box-shadow:0 16px 50px rgba(0,0,0,0.3);">
+            <img src="assets/img/water.jpg" alt="Water Kenya" class="w-full" style="height:450px; object-fit:cover;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAITH & FORUMS ==================== -->
+  <section id="faith" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 mb-16">
+        <div data-fade data-delay="1">
+          <span class="section-badge badge-green">Program 05</span>
+          <h2 class="font-heading text-3xl font-bold text-gray-900 mb-4">⛪ Faith-Based Community Coalitions</h2>
+          <p class="text-gray-600 mb-4 leading-relaxed">
+            Churches, mosques, and faith communities are the most trusted institutions in Kamba society. ADADO works hand-in-hand with faith leaders in North Carolina and Kenya to mobilize resources, spread community awareness, and deliver programs to the grassroots.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3"><i class="fas fa-check-circle mt-1" style="color:var(--green-deep);"></i><span class="text-gray-600 text-sm">Partnering with Kamba churches in North Carolina for fundraising and community events</span></li>
+            <li class="flex items-start gap-3"><i class="fas fa-check-circle mt-1" style="color:var(--green-deep);"></i><span class="text-gray-600 text-sm">Supporting faith-led community development projects in Machakos, Kitui, and Makueni</span></li>
+            <li class="flex items-start gap-3"><i class="fas fa-check-circle mt-1" style="color:var(--green-deep);"></i><span class="text-gray-600 text-sm">Building interfaith bridges that unite all Kamba community members around shared development goals</span></li>
+          </ul>
+        </div>
+        <div id="forums" data-fade data-delay="2">
+          <span class="section-badge badge-gold">Program 06</span>
+          <h2 class="font-heading text-3xl font-bold text-gray-900 mb-4">🏛️ Town Halls &amp; Community Forums</h2>
+          <p class="text-gray-600 mb-4 leading-relaxed">
+            We believe in radical inclusion. Every Kamba voice — young and old, home and abroad — deserves to shape our community's direction. ADADO hosts regular town halls in North Carolina and virtual forums connecting the diaspora with Kenya.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3"><i class="fas fa-check-circle mt-1" style="color:var(--gold);"></i><span class="text-gray-600 text-sm">Quarterly in-person community meetings in North Carolina</span></li>
+            <li class="flex items-start gap-3"><i class="fas fa-check-circle mt-1" style="color:var(--gold);"></i><span class="text-gray-600 text-sm">Annual diaspora-Kenya virtual summits bringing the community together</span></li>
+            <li class="flex items-start gap-3"><i class="fas fa-check-circle mt-1" style="color:var(--gold);"></i><span class="text-gray-600 text-sm">Community polls, surveys, and open forums to guide ADADO's agenda democratically</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:linear-gradient(135deg, #004d00, var(--green-deep)); padding:5rem 0;">
+    <div class="max-w-4xl mx-auto px-4 text-center" data-fade>
+      <h2 class="font-heading text-3xl font-bold text-white mb-4">Support Our Programs</h2>
+      <p style="color:rgba(255,255,255,0.75); margin-bottom:2.5rem; max-width:500px; margin-left:auto; margin-right:auto;">Your donation directly funds these life-changing programs. Even a small contribution creates ripples of impact across the Kamba community.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="get-involved.html#donate" class="btn-gold"><i class="fas fa-heart"></i> Donate to a Program</a>
+        <a href="get-involved.html" class="btn-outline-white"><i class="fas fa-users"></i> Volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4"><img src="assets/img/logo.png" alt="ADADO Logo" style="height:94px;" /><div><div class="font-heading text-xl font-bold" style="color:var(--gold);">ADADO</div><div style="font-size:0.65rem; color:rgba(255,255,255,0.4);">Akamba Diaspora Advancement &amp; Development Organization, Inc.</div></div></div>
+          <p style="color:rgba(255,255,255,0.5); font-size:0.85rem; max-width:300px; line-height:1.7;">Empowering Kamba communities through sustainable development, education, and civic engagement.</p>
+          <div class="flex gap-3 mt-4">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div><h5 class="font-semibold text-white mb-3">Quick Links</h5><a href="index.html" class="footer-link">Home</a><a href="about.html" class="footer-link">About</a><a href="programs.html" class="footer-link">Programs</a><a href="news-events.html" class="footer-link">News &amp; Events</a><a href="get-involved.html" class="footer-link">Get Involved</a><a href="contact.html" class="footer-link">Contact</a></div>
+        <div><h5 class="font-semibold text-white mb-3">Contact</h5><p class="footer-link"><i class="fas fa-map-marker-alt mr-2" style="color:var(--gold);"></i>North Carolina, USA</p><p class="footer-link"><i class="fas fa-globe-africa mr-2" style="color:var(--gold);"></i>Machakos, Kenya</p><p class="footer-link"><i class="fas fa-envelope mr-2" style="color:var(--gold);"></i>info@adado.org</p></div>
+      </div>
+    </div>
+    <div class="kenya-strip"></div>
+    <div style="background:rgba(0,0,0,0.3); padding:1rem 0; text-align:center;"><p style="color:rgba(255,255,255,0.35); font-size:0.8rem;">&copy; 2025 ADADO – All rights reserved.</p></div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

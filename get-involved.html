@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Involved – ADADO</title>
+  <meta name="description" content="Join ADADO as a member, volunteer, donor, or partner. Help empower the Kamba community in North Carolina and Kenya." />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: { deep: '#006600', mid: '#1a8c1a', light: '#e8f5e9' },
+            gold:  { DEFAULT: '#D4A017', light: '#fff8e1' },
+            dark:  { DEFAULT: '#0f1a0f' },
+          },
+          fontFamily: { heading: ['"Playfair Display"', 'serif'], body: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .amount-btn { padding:0.65rem 1.5rem; border-radius:8px; border:2px solid #e5e7eb; background:white; font-weight:600; cursor:pointer; transition:all 0.25s; font-family:'Inter',sans-serif; }
+    .amount-btn:hover { border-color:var(--green-deep); color:var(--green-deep); }
+    .amount-btn.selected { background:var(--green-deep); color:white; border-color:var(--green-deep); }
+    .way-card { border-radius:16px; padding:2.5rem; background:white; box-shadow:0 4px 20px rgba(0,0,0,0.07); text-align:center; transition:transform 0.3s, box-shadow 0.3s; border-top:4px solid transparent; }
+    .way-card:hover { transform:translateY(-8px); box-shadow:0 16px 48px rgba(0,0,0,0.14); }
+    .way-card.green-top  { border-top-color:var(--green-deep); }
+    .way-card.gold-top   { border-top-color:var(--gold); }
+    .way-card.red-top    { border-top-color:#BB0000; }
+    .way-card.dark-top   { border-top-color:#1a1a2e; }
+    .way-icon { width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1.25rem; font-size:1.8rem; }
+  </style>
+</head>
+<body class="font-body">
+
+  <div id="preloader"><img src="assets/img/logo.png" alt="ADADO" /><div class="bar-wrap"><div class="bar-fill"></div></div></div>
+  <button id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="nav-logo flex items-center gap-3">
+        <img src="assets/img/logo.png" alt="ADADO Logo" />
+        <div class="hidden md:block">
+          <div style="color:var(--gold); font-family:'Playfair Display',serif; font-weight:700; font-size:1.1rem; line-height:1;">ADADO</div>
+          <div style="color:rgba(255,255,255,0.6); font-size:0.65rem; letter-spacing:0.1em;">Kamba Diaspora Org.</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html"        class="nav-link">Home</a>
+        <a href="about.html"        class="nav-link">About Us</a>
+        <a href="programs.html"     class="nav-link">Programs</a>
+        <a href="news-events.html"  class="nav-link">News & Events</a>
+        <a href="get-involved.html" class="nav-link active">Get Involved</a>
+        <a href="contact.html"      class="nav-link">Contact</a>
+      </div>
+      <div class="hidden lg:block"><a href="#donate" class="btn-gold text-sm py-2 px-5"><i class="fas fa-heart"></i> Donate</a></div>
+      <button id="menu-btn" class="lg:hidden text-white text-xl p-2"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Home</a><a href="about.html">About Us</a><a href="programs.html">Programs</a>
+      <a href="news-events.html">News & Events</a><a href="get-involved.html">Get Involved</a><a href="contact.html">Contact</a>
+      <a href="#donate" style="color:var(--gold); font-weight:700;">♥ Donate Now</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background-image:url('assets/img/hero-getinvolved.jpg');">
+    <div class="page-hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="section-badge badge-gold">Take Action</span>
+      <h1 class="font-heading text-4xl lg:text-5xl font-bold text-white mt-2 mb-4">Get Involved</h1>
+      <p class="text-white/70 max-w-2xl mx-auto">Join our mission. Donate, volunteer, become a member, or partner with ADADO to create real change for the Kamba community.</p>
+      <div class="mt-6 flex items-center justify-center gap-2 text-sm" style="color:rgba(255,255,255,0.5);">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span style="color:var(--gold);">Get Involved</span>
+      </div>
+    </div>
+  </div>
+  <div class="kenya-strip"></div>
+
+  <!-- ==================== WAYS TO HELP ==================== -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-fade>
+        <span class="section-badge badge-green">How You Can Help</span>
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-gray-900">Four Ways to Make a Difference</h2>
+        <p class="text-gray-500 mt-3 max-w-xl mx-auto">Whether you give money, time, or expertise — every form of support matters and creates real community impact.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="way-card green-top" data-fade data-delay="1">
+          <div class="way-icon" style="background:var(--green-light);"><i class="fas fa-heart" style="color:var(--green-deep);"></i></div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Donate</h3>
+          <p class="text-gray-500 text-sm mb-5">Fund programs that change lives — agriculture, education, water, and community development across Kenya and North Carolina.</p>
+          <a href="#donate" class="btn-primary" style="width:100%; justify-content:center; font-size:0.9rem;">Give Now</a>
+        </div>
+        <div class="way-card gold-top" data-fade data-delay="2">
+          <div class="way-icon" style="background:var(--gold-light);"><i class="fas fa-user-plus" style="color:var(--gold);"></i></div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Become a Member</h3>
+          <p class="text-gray-500 text-sm mb-5">Join the ADADO family. Members get voting rights, access to events, networking opportunities, and updates on all programs.</p>
+          <a href="#membership" class="btn-gold" style="width:100%; justify-content:center; font-size:0.9rem;">Join ADADO</a>
+        </div>
+        <div class="way-card red-top" data-fade data-delay="3">
+          <div class="way-icon" style="background:#fde8e8;"><i class="fas fa-hands-helping" style="color:#BB0000;"></i></div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Volunteer</h3>
+          <p class="text-gray-500 text-sm mb-5">Offer your skills, time, and expertise. We need professionals in agriculture, tech, education, healthcare, law, and communications.</p>
+          <a href="#volunteer" class="btn-primary" style="width:100%; justify-content:center; font-size:0.9rem; background:#BB0000; border-color:#BB0000;">Volunteer</a>
+        </div>
+        <div class="way-card dark-top" data-fade data-delay="4">
+          <div class="way-icon" style="background:#f0f0f0;"><i class="fas fa-handshake" style="color:#1a1a2e;"></i></div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Partner With Us</h3>
+          <p class="text-gray-500 text-sm mb-5">Organizations, businesses, and institutions — partner with ADADO to co-fund programs, provide technical expertise, and expand our reach.</p>
+          <a href="contact.html" class="btn-primary" style="width:100%; justify-content:center; font-size:0.9rem; background:#1a1a2e; border-color:#1a1a2e;">Partner</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DONATE ==================== -->
+  <section id="donate" class="py-20" style="background:var(--light);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-fade>
+        <span class="section-badge badge-green">Make a Donation</span>
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-gray-900">Your Gift Creates Change</h2>
+        <p class="text-gray-500 mt-3 max-w-xl mx-auto">Every dollar donated goes directly to programs that uplift Kamba communities. 100% transparency — you decide where your money goes.</p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <!-- Donation amounts -->
+        <div data-fade-left>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-6">Choose Your Impact Level</h3>
+          <div class="grid sm:grid-cols-3 gap-4 mb-8">
+            <div class="donate-card" data-fade data-delay="1">
+              <div class="donate-amount">$25</div>
+              <p class="text-gray-500 text-sm mt-2 mb-3">Seeds for 1 Kamba farmer's drought-resistant crop</p>
+              <a href="#give-form" class="btn-primary" style="width:100%; justify-content:center; font-size:0.85rem; padding:0.6rem;">Give $25</a>
+            </div>
+            <div class="donate-card featured" data-fade data-delay="2">
+              <div style="background:var(--gold); color:white; font-size:0.65rem; padding:3px 10px; border-radius:999px; margin-bottom:8px; display:inline-block; font-weight:700; letter-spacing:0.1em;">POPULAR</div>
+              <div class="donate-amount">$50</div>
+              <p class="text-gray-500 text-sm mt-2 mb-3">One month's school fees for a Kamba student in Kenya</p>
+              <a href="#give-form" class="btn-gold" style="width:100%; justify-content:center; font-size:0.85rem; padding:0.6rem;">Give $50</a>
+            </div>
+            <div class="donate-card" data-fade data-delay="3">
+              <div class="donate-amount">$100</div>
+              <p class="text-gray-500 text-sm mt-2 mb-3">Agricultural training for 2 Kamba farmers</p>
+              <a href="#give-form" class="btn-primary" style="width:100%; justify-content:center; font-size:0.85rem; padding:0.6rem;">Give $100</a>
+            </div>
+            <div class="donate-card" data-fade data-delay="4">
+              <div class="donate-amount">$250</div>
+              <p class="text-gray-500 text-sm mt-2 mb-3">Fund a youth digital literacy workshop for 10 students</p>
+              <a href="#give-form" class="btn-primary" style="width:100%; justify-content:center; font-size:0.85rem; padding:0.6rem;">Give $250</a>
+            </div>
+            <div class="donate-card" data-fade data-delay="5">
+              <div class="donate-amount">$500</div>
+              <p class="text-gray-500 text-sm mt-2 mb-3">Contribute to one micro-irrigation system for a farm</p>
+              <a href="#give-form" class="btn-primary" style="width:100%; justify-content:center; font-size:0.85rem; padding:0.6rem;">Give $500</a>
+            </div>
+            <div class="donate-card" data-fade data-delay="6">
+              <div class="donate-amount">Custom</div>
+              <p class="text-gray-500 text-sm mt-2 mb-3">Give any amount — every dollar counts toward our mission</p>
+              <a href="#give-form" class="btn-gold" style="width:100%; justify-content:center; font-size:0.85rem; padding:0.6rem;">Give Custom</a>
+            </div>
+          </div>
+          <!-- Donation allocation info -->
+          <div style="background:var(--green-light); border-radius:12px; padding:1.5rem; border:1px solid rgba(0,102,0,0.15);">
+            <h5 class="font-semibold text-gray-900 mb-3">How Your Donation Is Used</h5>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-sm mb-1"><span class="text-gray-700">Agriculture & Water Programs</span><span class="font-semibold" style="color:var(--green-deep);">45%</span></div>
+                <div style="background:#c8e6c9; border-radius:999px; height:6px;"><div style="background:var(--green-deep); height:100%; width:45%; border-radius:999px;"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1"><span class="text-gray-700">Education & Scholarships</span><span class="font-semibold" style="color:var(--green-deep);">30%</span></div>
+                <div style="background:#c8e6c9; border-radius:999px; height:6px;"><div style="background:var(--green-deep); height:100%; width:30%; border-radius:999px;"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1"><span class="text-gray-700">Community Programs & Events</span><span class="font-semibold" style="color:var(--green-deep);">20%</span></div>
+                <div style="background:#c8e6c9; border-radius:999px; height:6px;"><div style="background:var(--green-deep); height:100%; width:20%; border-radius:999px;"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1"><span class="text-gray-700">Administration & Operations</span><span class="font-semibold" style="color:var(--green-deep);">5%</span></div>
+                <div style="background:#c8e6c9; border-radius:999px; height:6px;"><div style="background:var(--green-deep); height:100%; width:5%; border-radius:999px;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Donation form -->
+        <div id="give-form" data-fade-right>
+          <div style="background:white; border-radius:20px; padding:2.5rem; box-shadow:0 8px 40px rgba(0,0,0,0.1);">
+            <h3 class="font-heading text-2xl font-bold text-gray-900 mb-6">Make a Donation</h3>
+            <form onsubmit="handleDonate(event)">
+              <div class="mb-5">
+                <label style="font-size:0.88rem; font-weight:600; color:#374151; display:block; margin-bottom:8px;">Select Amount</label>
+                <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+                  <button type="button" class="amount-btn selected" data-amount="50">$50</button>
+                  <button type="button" class="amount-btn" data-amount="100">$100</button>
+                  <button type="button" class="amount-btn" data-amount="250">$250</button>
+                  <button type="button" class="amount-btn" data-amount="500">$500</button>
+                  <button type="button" class="amount-btn" data-amount="">Custom</button>
+                </div>
+                <input type="number" id="customAmount" class="contact-input" placeholder="Or enter custom amount ($)" min="5" value="50" />
+              </div>
+              <div class="mb-5">
+                <label style="font-size:0.88rem; font-weight:600; color:#374151; display:block; margin-bottom:8px;">Donate To</label>
+                <select class="contact-input" style="background:white;">
+                  <option>General Fund (ADADO decides best use)</option>
+                  <option>Agriculture & Food Security</option>
+                  <option>Education & Scholarships</option>
+                  <option>Water & Drought Relief</option>
+                  <option>Community Events & Town Halls</option>
+                  <option>Centers of Excellence</option>
+                </select>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4 mb-5">
+                <div>
+                  <label style="font-size:0.88rem; font-weight:600; color:#374151; display:block; margin-bottom:8px;">First Name</label>
+                  <input type="text" class="contact-input" placeholder="Jane" required />
+                </div>
+                <div>
+                  <label style="font-size:0.88rem; font-weight:600; color:#374151; display:block; margin-bottom:8px;">Last Name</label>
+                  <input type="text" class="contact-input" placeholder="Doe" required />
+                </div>
+              </div>
+              <div class="mb-5">
+                <label style="font-size:0.88rem; font-weight:600; color:#374151; display:block; margin-bottom:8px;">Email</label>
+                <input type="email" class="contact-input" placeholder="jane@email.com" required />
+              </div>
+              <div class="mb-5">
+                <label style="display:flex; align-items:center; gap:10px; cursor:pointer;">
+                  <input type="checkbox" style="width:18px; height:18px; accent-color:var(--green-deep);" />
+                  <span style="font-size:0.88rem; color:#6b7280;">Make this a monthly donation</span>
+                </label>
+              </div>
+              <button type="submit" class="btn-primary" style="width:100%; justify-content:center; font-size:1rem; padding:1rem;">
+                <i class="fas fa-lock mr-2"></i> Donate Securely
+              </button>
+              <p style="text-align:center; color:var(--gray); font-size:0.75rem; margin-top:1rem;">
+                <i class="fas fa-shield-alt mr-1"></i> Your donation is secure and encrypted. ADADO is a registered non-profit organization.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MEMBERSHIP ==================== -->
+  <section id="membership" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-fade>
+        <span class="section-badge badge-gold">Membership</span>
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-gray-900">Join the ADADO Family</h2>
+        <p class="text-gray-500 mt-3 max-w-xl mx-auto">Membership gives you a voice, a vote, and a community of changemakers working for the Kamba people.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div style="border-radius:16px; padding:2.5rem; background:white; border:2px solid #e5e7eb; text-align:center; transition:all 0.3s;" data-fade data-delay="1" onmouseover="this.style.borderColor='var(--green-deep)'; this.style.transform='translateY(-6px)'" onmouseout="this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)'">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">🌱</div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-1">Community Member</h3>
+          <div class="donate-amount" style="font-size:2rem; margin:0.5rem 0;">$25<span style="font-size:0.9rem; font-weight:400; color:var(--gray);">/yr</span></div>
+          <ul style="list-style:none; padding:0; text-align:left; margin:1.5rem 0; space-y:0.5rem;">
+            <li style="display:flex; gap:8px; margin-bottom:8px; font-size:0.88rem; color:#4b5563;"><i class="fas fa-check" style="color:var(--green-deep); margin-top:2px;"></i>ADADO Newsletter & Updates</li>
+            <li style="display:flex; gap:8px; margin-bottom:8px; font-size:0.88rem; color:#4b5563;"><i class="fas fa-check" style="color:var(--green-deep); margin-top:2px;"></i>Event Invitations</li>
+            <li style="display:flex; gap:8px; margin-bottom:8px; font-size:0.88rem; color:#4b5563;"><i class="fas fa-check" style="color:var(--green-deep); margin-top:2px;"></i>Community Directory Access</li>
+            <li style="display:flex; gap:8px; font-size:0.88rem; color:#4b5563;"><i class="fas fa-check" style="color:var(--green-deep); margin-top:2px;"></i>Annual General Meeting Voting</li>
+          </ul>
+          <a href="contact.html" class="btn-primary" style="width:100%; justify-content:center;">Join as Community</a>
+        </div>
+        <div style="border-radius:16px; padding:2.5rem; background:linear-gradient(135deg, var(--green-deep), #004d00); border:2px solid var(--green-deep); text-align:center; position:relative; transform:scale(1.03); box-shadow:0 20px 60px rgba(0,102,0,0.25);" data-fade data-delay="2">
+          <div style="position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:var(--gold); color:#1a1a1a; font-size:0.7rem; font-weight:800; padding:4px 16px; border-radius:999px; letter-spacing:0.1em;">RECOMMENDED</div>
+          <div style="font-size:2.5rem; margin-bottom:1rem;">⭐</div>
+          <h3 class="font-heading text-xl font-bold text-white mb-1">Associate Member</h3>
+          <div style="font-family:'Playfair Display',serif; font-size:2rem; font-weight:800; color:var(--gold); margin:0.5rem 0;">$75<span style="font-size:0.9rem; font-weight:400; color:rgba(255,255,255,0.6);">/yr</span></div>
+          <ul style="list-style:none; padding:0; text-align:left; margin:1.5rem 0;">
+            <li style="display:flex; gap:8px; margin-bottom:8px; font-size:0.88rem; color:rgba(255,255,255,0.85);"><i class="fas fa-check" style="color:var(--gold); margin-top:2px;"></i>Everything in Community</li>
+            <li style="display:flex; gap:8px; margin-bottom:8px; font-size:0.88rem; color:rgba(255,255,255,0.85);"><i class="fas fa-check" style="color:var(--gold); margin-top:2px;"></i>Priority Event Registration</li>
+            <li style="display:flex; gap:8px; margin-bottom:8px; font-size:0.88rem; color:rgba(255,255,255,0.85);"><i class="fas fa-check" style="color:var(--gold); margin-top:2px;"></i>Committee Participation</li>
+            <li style="display:flex; gap:8px; margin-bottom:8px; font-size:0.88rem; color:rgba(255,255,255,0.85);"><i class="fas fa-check" style="color:var(--gold); margin-top:2px;"></i>Mentorship Network Access</li>
+            <li style="display:flex; gap:8px; font-size:0.88rem; color:rgba(255,255,255,0.85);"><i class="fas fa-check" style="color:var(--gold); margin-top:2px;"></i>Business Directory Listing</li>
+          </ul>
+          <a href="contact.html" class="btn-gold" style="width:100%; justify-content:center;">Join as Associate</a>
+        </div>
+        <div style="border-radius:16px; padding:2.5rem; background:white; border:2px solid #e5e7eb; text-align:center; transition:all 0.3s;" data-fade data-delay="3" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-6px)'" onmouseout="this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)'">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">👑</div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-1">Patron Member</h3>
+          <div class="donate-amount" style="font-size:2rem; margin:0.5rem 0;">$200<span style="font-size:0.9rem; font-weight:400; color:var(--gray);">/yr</span></div>
+          <ul style="list-style:none; padding:0; text-align:left; margin:1.5rem 0;">
+            <li style="display:flex; gap:8px; margin-bottom:8px; font-size:0.88rem; color:#4b5563;"><i class="fas fa-check" style="color:var(--gold); margin-top:2px;"></i>Everything in Associate</li>
+            <li style="display:flex; gap:8px; margin-bottom:8px; font-size:0.88rem; color:#4b5563;"><i class="fas fa-check" style="color:var(--gold); margin-top:2px;"></i>Advisory Board Eligibility</li>
+            <li style="display:flex; gap:8px; margin-bottom:8px; font-size:0.88rem; color:#4b5563;"><i class="fas fa-check" style="color:var(--gold); margin-top:2px;"></i>Name on ADADO Website</li>
+            <li style="display:flex; gap:8px; margin-bottom:8px; font-size:0.88rem; color:#4b5563;"><i class="fas fa-check" style="color:var(--gold); margin-top:2px;"></i>Annual Impact Report</li>
+            <li style="display:flex; gap:8px; font-size:0.88rem; color:#4b5563;"><i class="fas fa-check" style="color:var(--gold); margin-top:2px;"></i>VIP Event Access</li>
+          </ul>
+          <a href="contact.html" class="btn-gold" style="width:100%; justify-content:center;">Join as Patron</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VOLUNTEER ==================== -->
+  <section id="volunteer" class="py-20" style="background:var(--light);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div data-fade-left>
+          <span class="section-badge badge-green">Volunteer</span>
+          <h2 class="font-heading text-3xl font-bold text-gray-900 mb-5">Give Your Time & Talent</h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">ADADO is powered by volunteers — passionate Kamba professionals who give their time, expertise, and energy to our mission. No matter your background, we have a place for you.</p>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <div style="background:white; padding:1rem; border-radius:10px; display:flex; align-items:center; gap:10px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+              <span style="font-size:1.5rem;">👨‍🌾</span><span style="font-size:0.88rem; font-weight:600; color:#374151;">Agriculture Experts</span>
+            </div>
+            <div style="background:white; padding:1rem; border-radius:10px; display:flex; align-items:center; gap:10px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+              <span style="font-size:1.5rem;">💻</span><span style="font-size:0.88rem; font-weight:600; color:#374151;">Tech Professionals</span>
+            </div>
+            <div style="background:white; padding:1rem; border-radius:10px; display:flex; align-items:center; gap:10px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+              <span style="font-size:1.5rem;">🏥</span><span style="font-size:0.88rem; font-weight:600; color:#374151;">Healthcare Workers</span>
+            </div>
+            <div style="background:white; padding:1rem; border-radius:10px; display:flex; align-items:center; gap:10px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+              <span style="font-size:1.5rem;">📖</span><span style="font-size:0.88rem; font-weight:600; color:#374151;">Educators & Mentors</span>
+            </div>
+            <div style="background:white; padding:1rem; border-radius:10px; display:flex; align-items:center; gap:10px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+              <span style="font-size:1.5rem;">⚖️</span><span style="font-size:0.88sm; font-weight:600; color:#374151;">Legal Advisors</span>
+            </div>
+            <div style="background:white; padding:1rem; border-radius:10px; display:flex; align-items:center; gap:10px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+              <span style="font-size:1.5rem;">📣</span><span style="font-size:0.88rem; font-weight:600; color:#374151;">Marketing & Media</span>
+            </div>
+            <div style="background:white; padding:1rem; border-radius:10px; display:flex; align-items:center; gap:10px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+              <span style="font-size:1.5rem;">💰</span><span style="font-size:0.88rem; font-weight:600; color:#374151;">Finance & Accounting</span>
+            </div>
+            <div style="background:white; padding:1rem; border-radius:10px; display:flex; align-items:center; gap:10px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+              <span style="font-size:1.5rem;">🌐</span><span style="font-size:0.88rem; font-weight:600; color:#374151;">Event Coordinators</span>
+            </div>
+          </div>
+        </div>
+        <div data-fade-right>
+          <div style="background:white; border-radius:20px; padding:2.5rem; box-shadow:0 8px 40px rgba(0,0,0,0.08);">
+            <h3 class="font-heading text-xl font-bold text-gray-900 mb-5">Volunteer Sign-Up</h3>
+            <form onsubmit="handleVolunteer(event)">
+              <div class="grid sm:grid-cols-2 gap-4 mb-4">
+                <div><label style="font-size:0.85rem; font-weight:600; color:#374151; display:block; margin-bottom:6px;">First Name</label><input type="text" class="contact-input" placeholder="Jane" required /></div>
+                <div><label style="font-size:0.85rem; font-weight:600; color:#374151; display:block; margin-bottom:6px;">Last Name</label><input type="text" class="contact-input" placeholder="Doe" required /></div>
+              </div>
+              <div class="mb-4"><label style="font-size:0.85rem; font-weight:600; color:#374151; display:block; margin-bottom:6px;">Email</label><input type="email" class="contact-input" placeholder="jane@email.com" required /></div>
+              <div class="mb-4"><label style="font-size:0.85rem; font-weight:600; color:#374151; display:block; margin-bottom:6px;">Phone (Optional)</label><input type="tel" class="contact-input" placeholder="+1 (555) 000-0000" /></div>
+              <div class="mb-4"><label style="font-size:0.85rem; font-weight:600; color:#374151; display:block; margin-bottom:6px;">Area of Expertise</label><select class="contact-input" style="background:white;"><option>Agriculture & Farming</option><option>Technology & Digital</option><option>Education & Training</option><option>Healthcare</option><option>Legal & Compliance</option><option>Finance & Accounting</option><option>Marketing & Communications</option><option>Event Planning</option><option>General Administration</option></select></div>
+              <div class="mb-5"><label style="font-size:0.85rem; font-weight:600; color:#374151; display:block; margin-bottom:6px;">Message / Availability</label><textarea class="contact-input" rows="3" placeholder="Tell us about yourself and how you'd like to help..."></textarea></div>
+              <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Submit Volunteer Application</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:linear-gradient(135deg, var(--green-deep), #004d00); padding:5rem 0;">
+    <div class="max-w-4xl mx-auto px-4 text-center" data-fade>
+      <h2 class="font-heading text-3xl font-bold text-white mb-4">"We Are All In This Together"</h2>
+      <p style="color:rgba(255,255,255,0.75); margin-bottom:2.5rem; font-size:1.05rem; font-style:italic;">— The ADADO Community Motto</p>
+      <a href="contact.html" class="btn-gold"><i class="fas fa-envelope"></i> Contact ADADO</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="lg:col-span-2"><div class="flex items-center gap-3 mb-4"><img src="assets/img/logo.png" alt="ADADO Logo" style="height:94px;" /><div><div class="font-heading text-xl font-bold" style="color:var(--gold);">ADADO</div><div style="font-size:0.65rem; color:rgba(255,255,255,0.4);">Akamba Diaspora Advancement & Development Organization, Inc.</div></div></div><p style="color:rgba(255,255,255,0.5); font-size:0.85rem; max-width:300px; line-height:1.7;">Empowering Kamba communities through sustainable development and civic engagement.</p><div class="flex gap-3 mt-4"><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a><a href="#" class="social-icon"><i class="fab fa-youtube"></i></a></div></div>
+        <div><h5 class="font-semibold text-white mb-3">Quick Links</h5><a href="index.html" class="footer-link">Home</a><a href="about.html" class="footer-link">About</a><a href="programs.html" class="footer-link">Programs</a><a href="news-events.html" class="footer-link">News & Events</a><a href="get-involved.html" class="footer-link">Get Involved</a><a href="contact.html" class="footer-link">Contact</a></div>
+        <div><h5 class="font-semibold text-white mb-3">Contact</h5><p class="footer-link"><i class="fas fa-map-marker-alt mr-2" style="color:var(--gold);"></i>North Carolina, USA</p><p class="footer-link"><i class="fas fa-globe-africa mr-2" style="color:var(--gold);"></i>Machakos, Kenya</p><p class="footer-link"><i class="fas fa-envelope mr-2" style="color:var(--gold);"></i>info@adado.org</p></div>
+      </div>
+    </div>
+    <div class="kenya-strip"></div>
+    <div style="background:rgba(0,0,0,0.3); padding:1rem 0; text-align:center;"><p style="color:rgba(255,255,255,0.35); font-size:0.8rem;">&copy; 2025 ADADO – All rights reserved.</p></div>
+  </footer>
+
+  <script>
+    function handleDonate(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Processing...';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fas fa-check mr-2"></i>Thank You! Donation Received';
+        btn.style.background = 'var(--gold)';
+        btn.style.borderColor = 'var(--gold)';
+        btn.style.color = '#1a1a1a';
+        setTimeout(() => {
+          btn.innerHTML = '<i class="fas fa-lock mr-2"></i>Donate Securely';
+          btn.disabled = false;
+          btn.style.background = '';
+          btn.style.borderColor = '';
+          btn.style.color = '';
+        }, 4000);
+      }, 2000);
+    }
+    function handleVolunteer(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Application Sent! ✓';
+      btn.disabled = true;
+      btn.style.background = 'var(--gold)';
+      btn.style.color = '#1a1a1a';
+      setTimeout(() => {
+        btn.textContent = 'Submit Volunteer Application';
+        btn.disabled = false;
+        btn.style.background = '';
+        btn.style.color = '';
+        e.target.reset();
+      }, 4000);
+    }
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

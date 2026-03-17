@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News & Events – ADADO</title>
+  <meta name="description" content="Stay updated with ADADO's latest news, upcoming events, community stories, and announcements from the Kamba diaspora community." />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: { deep: '#006600', mid: '#1a8c1a', light: '#e8f5e9' },
+            gold:  { DEFAULT: '#D4A017', light: '#fff8e1' },
+            dark:  { DEFAULT: '#0f1a0f' },
+          },
+          fontFamily: { heading: ['"Playfair Display"', 'serif'], body: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-body">
+
+  <div id="preloader"><img src="assets/img/logo.png" alt="ADADO" /><div class="bar-wrap"><div class="bar-fill"></div></div></div>
+  <button id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="nav-logo flex items-center gap-3">
+        <img src="assets/img/logo.png" alt="ADADO Logo" />
+        <div class="hidden md:block">
+          <div style="color:var(--gold); font-family:'Playfair Display',serif; font-weight:700; font-size:1.1rem; line-height:1;">ADADO</div>
+          <div style="color:rgba(255,255,255,0.6); font-size:0.65rem; letter-spacing:0.1em;">Kamba Diaspora Org.</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html"        class="nav-link">Home</a>
+        <a href="about.html"        class="nav-link">About Us</a>
+        <a href="programs.html"     class="nav-link">Programs</a>
+        <a href="news-events.html"  class="nav-link active">News & Events</a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="contact.html"      class="nav-link">Contact</a>
+      </div>
+      <div class="hidden lg:block"><a href="get-involved.html#donate" class="btn-gold text-sm py-2 px-5"><i class="fas fa-heart"></i> Donate</a></div>
+      <button id="menu-btn" class="lg:hidden text-white text-xl p-2"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Home</a><a href="about.html">About Us</a><a href="programs.html">Programs</a>
+      <a href="news-events.html">News & Events</a><a href="get-involved.html">Get Involved</a><a href="contact.html">Contact</a>
+      <a href="get-involved.html#donate" style="color:var(--gold); font-weight:700;">♥ Donate Now</a>
+    </div>
+  </nav>
+
+  <!-- ==================== COMING SOON ==================== -->
+  <section style="min-height:100vh; background:linear-gradient(135deg, var(--dark) 0%, #1c2b1c 100%); display:flex; align-items:center; justify-content:center; padding:6rem 1.5rem 4rem; position:relative; overflow:hidden;">
+
+    <!-- Background pattern -->
+    <div style="position:absolute; inset:0; opacity:0.04; background-image:repeating-linear-gradient(45deg, white 0, white 1px, transparent 0, transparent 50%); background-size:30px 30px;"></div>
+
+    <!-- Kenya strip at top -->
+    <div class="kenya-strip" style="position:absolute; top:0; left:0; right:0;"></div>
+
+    <div style="text-align:center; position:relative; z-index:2; max-width:640px;" data-fade>
+
+      <!-- Logo -->
+      <div style="margin-bottom:2.5rem;">
+        <img src="assets/img/logo.png" alt="ADADO" style="width:110px; margin:0 auto; filter:drop-shadow(0 8px 24px rgba(0,0,0,0.5)); animation:floatLogo 4s ease-in-out infinite;" />
+      </div>
+
+      <!-- Coming Soon badge -->
+      <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(212,160,23,0.15); border:1px solid rgba(212,160,23,0.4); border-radius:999px; padding:8px 24px; margin-bottom:1.75rem;">
+        <span style="width:8px; height:8px; background:var(--gold); border-radius:50%; display:inline-block; animation:pulse 1.5s ease-in-out infinite;"></span>
+        <span style="color:var(--gold); font-size:0.78rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase;">Coming Soon</span>
+      </div>
+
+      <h1 class="font-heading" style="font-size:clamp(2.2rem, 6vw, 3.8rem); font-weight:800; color:white; line-height:1.15; margin-bottom:1.25rem;">
+        News & Events<br/>
+        <span style="color:var(--gold);">Launching Shortly</span>
+      </h1>
+
+      <p style="color:rgba(255,255,255,0.6); font-size:1rem; line-height:1.8; margin-bottom:2.5rem;">
+        We're preparing something great — community stories, upcoming events, and the latest updates from ADADO and the Kamba diaspora. Check back soon.
+      </p>
+
+      <!-- Divider -->
+      <div style="display:flex; align-items:center; gap:1rem; margin-bottom:2.5rem;">
+        <div style="flex:1; height:1px; background:rgba(255,255,255,0.1);"></div>
+        <span style="color:rgba(255,255,255,0.3); font-size:0.8rem; letter-spacing:0.1em;">STAY CONNECTED</span>
+        <div style="flex:1; height:1px; background:rgba(255,255,255,0.1);"></div>
+      </div>
+
+      <!-- Social links -->
+      <div style="display:flex; justify-content:center; gap:12px; margin-bottom:3rem;">
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+      <a href="index.html" class="btn-gold" style="margin-right:12px;"><i class="fas fa-home"></i> Back to Home</a>
+      <a href="contact.html" class="btn-outline-white"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Kenya strip bottom -->
+  <div class="kenya-strip"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4"><img src="assets/img/logo.png" alt="ADADO Logo" style="height:94px;" /><div><div class="font-heading text-xl font-bold" style="color:var(--gold);">ADADO</div><div style="font-size:0.65rem; color:rgba(255,255,255,0.4);">Akamba Diaspora Advancement & Development Organization, Inc.</div></div></div>
+          <p style="color:rgba(255,255,255,0.5); font-size:0.85rem; max-width:300px; line-height:1.7;">Empowering Kamba communities through sustainable development and civic engagement.</p>
+          <div class="flex gap-3 mt-4">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div><h5 class="font-semibold text-white mb-3">Quick Links</h5><a href="index.html" class="footer-link">Home</a><a href="about.html" class="footer-link">About</a><a href="programs.html" class="footer-link">Programs</a><a href="news-events.html" class="footer-link">News & Events</a><a href="get-involved.html" class="footer-link">Get Involved</a><a href="contact.html" class="footer-link">Contact</a></div>
+        <div><h5 class="font-semibold text-white mb-3">Contact</h5><p class="footer-link"><i class="fas fa-map-marker-alt mr-2" style="color:var(--gold);"></i>North Carolina, USA</p><p class="footer-link"><i class="fas fa-globe-africa mr-2" style="color:var(--gold);"></i>Machakos, Kenya</p><p class="footer-link"><i class="fas fa-envelope mr-2" style="color:var(--gold);"></i>info@adado.org</p></div>
+      </div>
+    </div>
+    <div class="kenya-strip"></div>
+    <div style="background:rgba(0,0,0,0.3); padding:1rem 0; text-align:center;"><p style="color:rgba(255,255,255,0.35); font-size:0.8rem;">&copy; 2025 ADADO – All rights reserved.</p></div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

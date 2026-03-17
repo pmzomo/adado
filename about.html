@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About ADADO – Akamba Diaspora Advancement & Development Organization</title>
+  <meta name="description" content="Learn about ADADO's history, mission, vision, core values, and the leadership driving change in the Kamba community." />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: { deep: '#006600', mid: '#1a8c1a', light: '#e8f5e9' },
+            gold:  { DEFAULT: '#D4A017', light: '#fff8e1' },
+            dark:  { DEFAULT: '#0f1a0f', mid: '#1c2b1c' },
+          },
+          fontFamily: { heading: ['"Playfair Display"', 'serif'], body: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-body">
+
+  <div id="preloader">
+    <img src="assets/img/logo.png" alt="ADADO" />
+    <div class="bar-wrap"><div class="bar-fill"></div></div>
+  </div>
+  <button id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="nav-logo flex items-center gap-3">
+        <img src="assets/img/logo.png" alt="ADADO Logo" />
+        <div class="hidden md:block">
+          <div style="color:var(--gold); font-family:'Playfair Display',serif; font-weight:700; font-size:1.1rem; line-height:1;">ADADO</div>
+          <div style="color:rgba(255,255,255,0.6); font-size:0.65rem; letter-spacing:0.1em;">Kamba Diaspora Org.</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html"        class="nav-link">Home</a>
+        <a href="about.html"        class="nav-link active">About Us</a>
+        <a href="programs.html"     class="nav-link">Programs</a>
+        <a href="news-events.html"  class="nav-link">News & Events</a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="contact.html"      class="nav-link">Contact</a>
+      </div>
+      <div class="hidden lg:block">
+        <a href="get-involved.html#donate" class="btn-gold text-sm py-2 px-5"><i class="fas fa-heart"></i> Donate</a>
+      </div>
+      <button id="menu-btn" class="lg:hidden text-white text-xl p-2"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Programs</a>
+      <a href="news-events.html">News & Events</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+      <a href="get-involved.html#donate" style="color:var(--gold); font-weight:700;">♥ Donate Now</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background-image:url('assets/img/hero-about.jpg');">
+    <div class="page-hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="section-badge badge-gold">Who We Are</span>
+      <h1 class="font-heading text-4xl lg:text-5xl font-bold text-white mt-2 mb-4">About ADADO</h1>
+      <p class="text-white/70 max-w-2xl mx-auto">Our story, our values, and the people driving change for Kamba communities in North Carolina and Kenya.</p>
+      <!-- Breadcrumb -->
+      <div class="mt-6 flex items-center justify-center gap-2 text-sm" style="color:rgba(255,255,255,0.5);">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span style="color:var(--gold);">About Us</span>
+      </div>
+    </div>
+  </div>
+  <div class="kenya-strip"></div>
+
+  <!-- ==================== OUR STORY ==================== -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div data-fade-left>
+          <span class="section-badge badge-green">Our Story</span>
+          <h2 class="font-heading text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Born from a Shared<br/><span class="text-green">Kamba Identity</span></h2>
+          <p class="text-gray-600 mb-5 leading-relaxed">
+            ADADO — the Akamba Diaspora Advancement & Development Organization, Inc. — was founded by passionate Kamba community members living in North Carolina who felt a deep calling to serve their homeland while strengthening their community abroad.
+          </p>
+          <p class="text-gray-600 mb-5 leading-relaxed">
+            We recognized that the Kamba people, spread across the globe, carry with them an incredible wealth of skills, education, and resources. But without coordination and direction, this potential remained untapped. ADADO was created to be that bridge.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Operating under the principle that <em>"we are all in this together,"</em> ADADO brings together professionals, farmers, educators, faith leaders, and community champions from the diaspora and Kenya to work toward a shared vision of prosperity for all Kamba people.
+          </p>
+        </div>
+        <div data-fade-right class="space-y-6">
+          <!-- Timeline -->
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div style="background:#f9fafb; border-radius:10px; padding:1.2rem 1.5rem;">
+                <div style="color:var(--green-deep); font-weight:700; font-size:0.8rem; margin-bottom:4px;">FOUNDING</div>
+                <h4 class="font-semibold text-gray-900 mb-1">ADADO Established in North Carolina</h4>
+                <p class="text-gray-500 text-sm">Kamba diaspora members in NC unite to form ADADO, Inc. as a formal non-profit organization focused on sustainable community development.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div style="background:#f9fafb; border-radius:10px; padding:1.2rem 1.5rem;">
+                <div style="color:var(--green-deep); font-weight:700; font-size:0.8rem; margin-bottom:4px;">OUTREACH</div>
+                <h4 class="font-semibold text-gray-900 mb-1">First Town Halls & Community Forums</h4>
+                <p class="text-gray-500 text-sm">ADADO launches inaugural town hall meetings in North Carolina and establishes dialogue channels with communities in Machakos, Kitui, and Makueni.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div style="background:#f9fafb; border-radius:10px; padding:1.2rem 1.5rem;">
+                <div style="color:var(--green-deep); font-weight:700; font-size:0.8rem; margin-bottom:4px;">PROGRAMS</div>
+                <h4 class="font-semibold text-gray-900 mb-1">Agriculture & Education Initiatives Launch</h4>
+                <p class="text-gray-500 text-sm">ADADO launches its flagship sustainable agriculture program and begins planning for Centers of Excellence in partnership with local government and NGOs.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div style="background:#fff8e1; border-radius:10px; padding:1.2rem 1.5rem; border:1px solid #fde68a;">
+                <div style="color:var(--gold); font-weight:700; font-size:0.8rem; margin-bottom:4px;">FUTURE</div>
+                <h4 class="font-semibold text-gray-900 mb-1">Centers of Excellence — In Progress</h4>
+                <p class="text-gray-500 text-sm">Plans underway to establish the first ADADO Center of Excellence in Machakos County — a hub for agricultural training, vocational skills, and entrepreneurship.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VISION & MISSION ==================== -->
+  <section class="py-20" style="background:var(--green-deep);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-fade>
+        <span class="section-badge" style="background:rgba(255,255,255,0.15); color:white;">Our Purpose</span>
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-white mt-2">Vision & Mission</h2>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-10">
+        <!-- Vision -->
+        <div data-fade data-delay="1" style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:20px; padding:2.5rem;">
+          <div style="width:64px; height:64px; background:rgba(255,255,255,0.1); border-radius:16px; display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem;">
+            <i class="fas fa-eye" style="color:var(--gold); font-size:1.8rem;"></i>
+          </div>
+          <h3 class="font-heading text-2xl font-bold text-white mb-4">Our Vision</h3>
+          <p style="color:rgba(255,255,255,0.8); line-height:1.9; font-size:1.05rem;">
+            To be a transformational force for the Kamba Community in North Carolina and Kenya, fostering <strong style="color:var(--gold);">sustainable development</strong>, educational excellence, and socio-economic growth through collaborative and innovative initiatives.
+          </p>
+        </div>
+        <!-- Mission -->
+        <div data-fade data-delay="2" style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:20px; padding:2.5rem;">
+          <div style="width:64px; height:64px; background:rgba(255,255,255,0.1); border-radius:16px; display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem;">
+            <i class="fas fa-bullseye" style="color:var(--gold); font-size:1.8rem;"></i>
+          </div>
+          <h3 class="font-heading text-2xl font-bold text-white mb-4">Our Mission</h3>
+          <ul style="color:rgba(255,255,255,0.8); line-height:1.9; list-style:none; padding:0; space-y:0.5rem;">
+            <li style="display:flex; gap:10px; margin-bottom:10px;"><span style="color:var(--gold); flex-shrink:0; margin-top:2px;">✦</span> Promote sustainable agricultural practices and technology to improve food security.</li>
+            <li style="display:flex; gap:10px; margin-bottom:10px;"><span style="color:var(--gold); flex-shrink:0; margin-top:2px;">✦</span> Establish Centers of Excellence to train and uplift Kamba people for future generations.</li>
+            <li style="display:flex; gap:10px; margin-bottom:10px;"><span style="color:var(--gold); flex-shrink:0; margin-top:2px;">✦</span> Encourage civic engagement within the diaspora to leverage expertise for development.</li>
+            <li style="display:flex; gap:10px; margin-bottom:10px;"><span style="color:var(--gold); flex-shrink:0; margin-top:2px;">✦</span> Build faith-based coalitions to support foundation projects in U.S. and Kenya.</li>
+            <li style="display:flex; gap:10px;"><span style="color:var(--gold); flex-shrink:0; margin-top:2px;">✦</span> Facilitate inclusive dialogues through town halls for holistic community development.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CORE VALUES ==================== -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-fade>
+        <span class="section-badge badge-green">What Guides Us</span>
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-gray-900">Our Core Values</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="team-card" data-fade data-delay="1">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">🌱</div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Sustainability</h3>
+          <p class="text-gray-500 text-sm">We invest in solutions that create lasting change — not quick fixes. Every program is designed with longevity and community ownership in mind.</p>
+        </div>
+        <div class="team-card" data-fade data-delay="2">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">🤝</div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Ubuntu (Community)</h3>
+          <p class="text-gray-500 text-sm">"I am because we are." Our work is rooted in the African philosophy of collective well-being — success is shared, and so is the journey.</p>
+        </div>
+        <div class="team-card" data-fade data-delay="3">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">🔬</div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Innovation</h3>
+          <p class="text-gray-500 text-sm">We embrace technology and modern methods to solve ancient challenges — from drone irrigation to digital market access for Kamba farmers.</p>
+        </div>
+        <div class="team-card" data-fade data-delay="4">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">⚖️</div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Integrity</h3>
+          <p class="text-gray-500 text-sm">We operate with full transparency and accountability. Every dollar, every decision, every program is held to the highest ethical standard.</p>
+        </div>
+        <div class="team-card" data-fade data-delay="5">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">🕊️</div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Faith & Values</h3>
+          <p class="text-gray-500 text-sm">Our work is grounded in faith and moral values. We partner with faith communities as pillars of trust and mobilization in both countries.</p>
+        </div>
+        <div class="team-card" data-fade data-delay="6">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">🌍</div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-2">Inclusivity</h3>
+          <p class="text-gray-500 text-sm">Every Kamba voice matters. We ensure women, youth, elders, and all community members have a seat at the table and a role in our mission.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== KAMBA PEOPLE ==================== -->
+  <section class="py-20" style="background:var(--light);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div data-fade-right class="order-2 lg:order-1">
+          <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=700&q=80"
+               alt="Kamba People Kenya" class="rounded-2xl shadow-xl w-full" style="height:460px; object-fit:cover;" />
+        </div>
+        <div data-fade-left class="order-1 lg:order-2">
+          <span class="section-badge badge-gold">Our People</span>
+          <h2 class="font-heading text-3xl lg:text-4xl font-bold text-gray-900 mb-6">The Resilient <span class="text-green">Kamba People</span></h2>
+          <p class="text-gray-600 mb-5 leading-relaxed">
+            The Akamba people — known for their resilience, craftsmanship, and entrepreneurial spirit — are one of Kenya's most prominent ethnic groups. Historically settled in the semi-arid Eastern Province, the Kamba have developed remarkable strategies for survival in challenging environments.
+          </p>
+          <p class="text-gray-600 mb-5 leading-relaxed">
+            Known as master wood carvers, traders, and warriors, the Kamba have always been outward-looking. Today, thousands of Kamba professionals and students live across the globe — in the U.S., UK, Canada, and beyond — carrying with them the values of hard work and community solidarity.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            ADADO channels this global Kamba network into a focused development force, connecting the diaspora's resources with the homeland's needs — building the Kamba future together.
+          </p>
+          <div class="flex flex-wrap gap-3 mt-6">
+            <div style="background:white; border-radius:8px; padding:0.75rem 1.25rem; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+              <div class="font-heading text-2xl font-bold text-green">4M+</div>
+              <div style="font-size:0.78rem; color:var(--gray);">Kamba People Worldwide</div>
+            </div>
+            <div style="background:white; border-radius:8px; padding:0.75rem 1.25rem; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+              <div class="font-heading text-2xl font-bold text-green">3</div>
+              <div style="font-size:0.78rem; color:var(--gray);">Core Kenyan Counties</div>
+            </div>
+            <div style="background:white; border-radius:8px; padding:0.75rem 1.25rem; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+              <div class="font-heading text-2xl font-bold text-green">NC</div>
+              <div style="font-size:0.78rem; color:var(--gray);">U.S. HQ – North Carolina</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LEADERSHIP ==================== -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-fade>
+        <span class="section-badge badge-green">Leadership</span>
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-gray-900">The People Behind ADADO</h2>
+        <p class="text-gray-500 mt-3 max-w-xl mx-auto">Passionate community leaders committed to creating lasting change for the Kamba people.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="team-card" data-fade data-delay="1">
+          <div class="avatar" style="background:linear-gradient(160deg,#1c3a12 0%,#2d5016 60%,#3a6b1a 100%); display:flex; flex-direction:column; align-items:center; justify-content:flex-end; overflow:hidden; padding:0;">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width:82%; display:block; fill:rgba(0,0,0,0.25);">
+              <circle cx="50" cy="30" r="22"/><ellipse cx="50" cy="95" rx="35" ry="27"/>
+            </svg>
+          </div>
+          <h4 class="font-heading text-lg font-bold text-gray-900 mb-1">Board President</h4>
+          <p style="color:var(--green-deep); font-size:0.85rem; font-weight:600; margin-bottom:0.75rem;">Founding Member</p>
+          <p class="text-gray-500 text-sm">Leading ADADO's strategic direction and diaspora engagement from North Carolina.</p>
+        </div>
+        <div class="team-card" data-fade data-delay="2">
+          <div class="avatar" style="background:linear-gradient(160deg,#1c3a12 0%,#2d5016 60%,#3a6b1a 100%); display:flex; flex-direction:column; align-items:center; justify-content:flex-end; overflow:hidden; padding:0;">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width:82%; display:block; fill:rgba(0,0,0,0.25);">
+              <circle cx="50" cy="30" r="22"/><ellipse cx="50" cy="95" rx="35" ry="27"/>
+            </svg>
+          </div>
+          <h4 class="font-heading text-lg font-bold text-gray-900 mb-1">Executive Director</h4>
+          <p style="color:var(--green-deep); font-size:0.85rem; font-weight:600; margin-bottom:0.75rem;">Operations Lead</p>
+          <p class="text-gray-500 text-sm">Overseeing program implementation and community partnerships in both the U.S. and Kenya.</p>
+        </div>
+        <div class="team-card" data-fade data-delay="3">
+          <div class="avatar" style="background:linear-gradient(160deg,#1c3a12 0%,#2d5016 60%,#3a6b1a 100%); display:flex; flex-direction:column; align-items:center; justify-content:flex-end; overflow:hidden; padding:0;">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width:82%; display:block; fill:rgba(0,0,0,0.25);">
+              <circle cx="50" cy="30" r="22"/><ellipse cx="50" cy="95" rx="35" ry="27"/>
+            </svg>
+          </div>
+          <h4 class="font-heading text-lg font-bold text-gray-900 mb-1">Agriculture Director</h4>
+          <p style="color:var(--green-deep); font-size:0.85rem; font-weight:600; margin-bottom:0.75rem;">Kenya Programs</p>
+          <p class="text-gray-500 text-sm">Leading sustainable farming initiatives across Machakos, Kitui, and Makueni counties.</p>
+        </div>
+        <div class="team-card" data-fade data-delay="4">
+          <div class="avatar" style="background:linear-gradient(160deg,#1c3a12 0%,#2d5016 60%,#3a6b1a 100%); display:flex; flex-direction:column; align-items:center; justify-content:flex-end; overflow:hidden; padding:0;">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width:82%; display:block; fill:rgba(0,0,0,0.25);">
+              <circle cx="50" cy="30" r="22"/><ellipse cx="50" cy="95" rx="35" ry="27"/>
+            </svg>
+          </div>
+          <h4 class="font-heading text-lg font-bold text-gray-900 mb-1">Education Director</h4>
+          <p style="color:var(--green-deep); font-size:0.85rem; font-weight:600; margin-bottom:0.75rem;">Scholarships & Training</p>
+          <p class="text-gray-500 text-sm">Coordinating ADADO's education programs, scholarship initiatives, and Centers of Excellence.</p>
+        </div>
+      </div>
+      <div class="text-center mt-10" data-fade>
+        <p class="text-gray-500 text-sm mb-4">Interested in joining our leadership team or advisory board?</p>
+        <a href="contact.html" class="btn-primary"><i class="fas fa-envelope"></i> Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:linear-gradient(135deg, #004d00, var(--green-deep)); padding:5rem 0;">
+    <div class="max-w-4xl mx-auto px-4 text-center" data-fade>
+      <h2 class="font-heading text-3xl font-bold text-white mb-4">Ready to be Part of the Story?</h2>
+      <p style="color:rgba(255,255,255,0.75); margin-bottom:2.5rem;">Join ADADO and help write the next chapter of Kamba community development.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="get-involved.html" class="btn-gold"><i class="fas fa-users"></i> Join Us Today</a>
+        <a href="programs.html" class="btn-outline-white"><i class="fas fa-th"></i> Explore Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/img/logo.png" alt="ADADO Logo" style="height:94px;" />
+            <div>
+              <div class="font-heading text-xl font-bold" style="color:var(--gold);">ADADO</div>
+              <div style="font-size:0.65rem; color:rgba(255,255,255,0.4); letter-spacing:0.08em;">Akamba Diaspora Advancement & Development Organization, Inc.</div>
+            </div>
+          </div>
+          <p style="color:rgba(255,255,255,0.5); font-size:0.85rem; max-width:300px; line-height:1.7;">Empowering Kamba communities through sustainable development, education, and civic engagement.</p>
+          <div class="flex gap-3 mt-4">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="font-semibold text-white mb-3">Quick Links</h5>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About ADADO</a>
+          <a href="programs.html" class="footer-link">Programs</a>
+          <a href="news-events.html" class="footer-link">News & Events</a>
+          <a href="get-involved.html" class="footer-link">Get Involved</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <div>
+          <h5 class="font-semibold text-white mb-3">Contact</h5>
+          <p class="footer-link"><i class="fas fa-map-marker-alt mr-2" style="color:var(--gold);"></i>North Carolina, USA</p>
+          <p class="footer-link"><i class="fas fa-globe-africa mr-2" style="color:var(--gold);"></i>Machakos, Kenya</p>
+          <p class="footer-link"><i class="fas fa-envelope mr-2" style="color:var(--gold);"></i>info@adado.org</p>
+        </div>
+      </div>
+    </div>
+    <div class="kenya-strip"></div>
+    <div style="background:rgba(0,0,0,0.3); padding:1rem 0; text-align:center;">
+      <p style="color:rgba(255,255,255,0.35); font-size:0.8rem;">&copy; 2025 ADADO – All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
