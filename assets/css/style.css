@@ -609,7 +609,7 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 768px) {
   .hero-bg { background-attachment: scroll; }
   .stat-number { font-size: 2.2rem; }
-  .logo-showcase img { width: 140px; }
+  .logo-showcase { display: none; }
 
   /* Transformative showcase — stack vertically on mobile */
   #transformGrid {

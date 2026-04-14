@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Philliph Masila Mutisya – ADADO Leadership</title>
+  <meta name="description" content="Dr. Philliph Masila Mutisya, Ed.D. — Founder of ADADO, educator, and visionary leader driving Kamba diaspora development." />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: { deep: '#006600', mid: '#1a8c1a', light: '#e8f5e9' },
+            gold:  { DEFAULT: '#D4A017', light: '#fff8e1' },
+            dark:  { DEFAULT: '#0f1a0f', mid: '#1c2b1c' },
+          },
+          fontFamily: { heading: ['"Playfair Display"', 'serif'], body: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-body">
+
+  <div id="preloader">
+    <img src="assets/img/logo.png" alt="ADADO" />
+    <div class="bar-wrap"><div class="bar-fill"></div></div>
+  </div>
+  <button id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="nav-logo flex items-center gap-3">
+        <img src="assets/img/logo.png" alt="ADADO Logo" />
+        <div class="hidden md:block">
+          <div style="color:var(--gold); font-family:'Playfair Display',serif; font-weight:700; font-size:1.1rem; line-height:1;">ADADO</div>
+          <div style="color:rgba(255,255,255,0.6); font-size:0.65rem; letter-spacing:0.1em;">Kamba Diaspora Org.</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html"        class="nav-link">Home</a>
+        <a href="about.html"        class="nav-link active">About Us</a>
+        <a href="programs.html"     class="nav-link">Programs</a>
+        <a href="news-events.html"  class="nav-link">News & Events</a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="contact.html"      class="nav-link">Contact</a>
+      </div>
+      <div class="hidden lg:block">
+        <a href="get-involved.html#donate" class="btn-gold text-sm py-2 px-5"><i class="fas fa-heart"></i> Donate</a>
+      </div>
+      <button id="menu-btn" class="lg:hidden text-white text-xl p-2"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Programs</a>
+      <a href="news-events.html">News & Events</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+      <a href="get-involved.html#donate" style="color:var(--gold); font-weight:700;">&#9829; Donate Now</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background-image:url('assets/img/hero-about.jpg');">
+    <div class="page-hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="section-badge badge-gold">Leadership</span>
+      <h1 class="font-heading text-4xl lg:text-5xl font-bold text-white mt-2 mb-4">Dr. Philliph Masila Mutisya</h1>
+      <p class="text-white/70 max-w-2xl mx-auto">Founder &amp; Visionary Leader</p>
+      <div class="mt-6 flex items-center justify-center gap-2 text-sm" style="color:rgba(255,255,255,0.5);">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <a href="about.html" class="hover:text-white transition-colors">About Us</a>
+        <i class="fas fa-chevron-right text-xs"></i>
+        <span style="color:var(--gold);">Dr. Mutisya</span>
+      </div>
+    </div>
+  </div>
+  <div class="kenya-strip"></div>
+
+  <!-- BIO SECTION -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-5 gap-12 items-start">
+
+        <!-- Left: Photo & Quick Info -->
+        <div class="lg:col-span-2" data-fade>
+          <div style="position:relative;">
+            <img src="assets/img/dr-mutisya.jpg" alt="Dr. Philliph Masila Mutisya"
+                 style="width:100%; border-radius:20px; box-shadow:0 20px 60px rgba(0,0,0,0.15); aspect-ratio:1/1; object-fit:cover;" />
+            <div style="position:absolute; bottom:-12px; right:-12px; width:80px; height:80px; background:var(--gold); border-radius:16px; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(212,160,23,0.4);">
+              <i class="fas fa-graduation-cap" style="font-size:2rem; color:white;"></i>
+            </div>
+          </div>
+
+          <!-- Quick Facts Card -->
+          <div style="background:var(--light); border-radius:16px; padding:1.8rem; margin-top:2.5rem;">
+            <h4 class="font-heading text-lg font-bold text-gray-900 mb-4">At a Glance</h4>
+            <div style="display:flex; flex-direction:column; gap:1rem;">
+              <div style="display:flex; align-items:flex-start; gap:12px;">
+                <div style="width:36px; height:36px; background:var(--green-light); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                  <i class="fas fa-user-tie" style="color:var(--green-deep); font-size:0.9rem;"></i>
+                </div>
+                <div>
+                  <div style="font-size:0.75rem; color:var(--gray); text-transform:uppercase; letter-spacing:0.08em; font-weight:600;">Title</div>
+                  <div style="font-size:0.9rem; font-weight:600; color:#1f2937;">Founder, ADADO</div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:flex-start; gap:12px;">
+                <div style="width:36px; height:36px; background:var(--green-light); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                  <i class="fas fa-university" style="color:var(--green-deep); font-size:0.9rem;"></i>
+                </div>
+                <div>
+                  <div style="font-size:0.75rem; color:var(--gray); text-transform:uppercase; letter-spacing:0.08em; font-weight:600;">Institution</div>
+                  <div style="font-size:0.9rem; font-weight:600; color:#1f2937;">North Carolina Central University</div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:flex-start; gap:12px;">
+                <div style="width:36px; height:36px; background:var(--green-light); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                  <i class="fas fa-book-open" style="color:var(--green-deep); font-size:0.9rem;"></i>
+                </div>
+                <div>
+                  <div style="font-size:0.75rem; color:var(--gray); text-transform:uppercase; letter-spacing:0.08em; font-weight:600;">Expertise</div>
+                  <div style="font-size:0.9rem; font-weight:600; color:#1f2937;">Instructional Leadership &amp; Educational Technology</div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:flex-start; gap:12px;">
+                <div style="width:36px; height:36px; background:var(--green-light); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                  <i class="fas fa-clock" style="color:var(--green-deep); font-size:0.9rem;"></i>
+                </div>
+                <div>
+                  <div style="font-size:0.75rem; color:var(--gray); text-transform:uppercase; letter-spacing:0.08em; font-weight:600;">Experience</div>
+                  <div style="font-size:0.9rem; font-weight:600; color:#1f2937;">37+ Years in Higher Education</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Bio Content -->
+        <div class="lg:col-span-3" data-fade data-delay="2">
+          <span class="section-badge badge-green">Founder</span>
+          <h2 class="font-heading text-3xl lg:text-4xl font-bold text-gray-900 mb-2">Dr. Philliph Masila Mutisya, <span class="text-green">Ed.D.</span></h2>
+          <p style="color:var(--green-deep); font-weight:600; font-size:1.05rem; margin-bottom:2rem;">Adjunct Professor &bull; North Carolina Central University</p>
+
+          <div style="width:60px; height:4px; background:linear-gradient(90deg, var(--green-deep), var(--gold)); border-radius:2px; margin-bottom:2rem;"></div>
+
+          <p class="text-gray-600 leading-relaxed mb-5" style="font-size:1.05rem;">
+            Dr. Philliph Masila Mutisya, Ed.D., is an Adjunct at North Carolina Central University (NCCU), where he returned in 2026 after retiring in 2024. He previously served as Full Professor of Education and Coordinator of Educational Technology in the Department of Curriculum and Instruction at the School of Education. With over 37 years of experience in higher education, his work focuses on instructional leadership, curriculum development, educational technology, and professional development across K-20 education.
+          </p>
+
+          <p class="text-gray-600 leading-relaxed mb-5" style="font-size:1.05rem;">
+            Dr. Mutisya holds a Doctorate in Instructional Leadership with a concentration in Curriculum Development in Multicultural and Bilingual Education, and a Master's degree in International Education and Training. His research and practice span multicultural education, critical pedagogy, educational entrepreneurship, and global education.
+          </p>
+
+          <!-- Leadership Roles -->
+          <div style="background:linear-gradient(135deg, #f0fdf4, #ecfdf5); border-left:4px solid var(--green-deep); border-radius:0 12px 12px 0; padding:1.8rem 2rem; margin:2rem 0;">
+            <h3 class="font-heading text-xl font-bold text-gray-900 mb-4"><i class="fas fa-star" style="color:var(--gold); margin-right:8px;"></i>Leadership Roles &amp; Founding Initiatives</h3>
+            <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.9rem;">
+              <li style="display:flex; gap:10px; align-items:flex-start;">
+                <span style="color:var(--gold); font-size:1.1rem; flex-shrink:0; margin-top:2px;">&#10029;</span>
+                <span class="text-gray-700"><strong>Lead Founder</strong> of Diaspora University Town &amp; Founding Member of the Board of Trustees — <a href="https://dut.or.ke" target="_blank" style="color:var(--green-deep); text-decoration:underline;">DUT.OR.KE</a></span>
+              </li>
+              <li style="display:flex; gap:10px; align-items:flex-start;">
+                <span style="color:var(--gold); font-size:1.1rem; flex-shrink:0; margin-top:2px;">&#10029;</span>
+                <span class="text-gray-700"><strong>Founder &amp; Board of Directors</strong> — Diaspora Outreach Developments Inc. — <a href="https://dodfincorp.org" target="_blank" style="color:var(--green-deep); text-decoration:underline;">DODFINCORP.ORG</a></span>
+              </li>
+              <li style="display:flex; gap:10px; align-items:flex-start;">
+                <span style="color:var(--gold); font-size:1.1rem; flex-shrink:0; margin-top:2px;">&#10029;</span>
+                <span class="text-gray-700"><strong>Founder &amp; Vice President</strong> — Integrated Community Healthcare Inc. — <a href="https://ichcare.org" target="_blank" style="color:var(--green-deep); text-decoration:underline;">ICHCARE.ORG</a></span>
+              </li>
+              <li style="display:flex; gap:10px; align-items:flex-start;">
+                <span style="color:var(--gold); font-size:1.1rem; flex-shrink:0; margin-top:2px;">&#10029;</span>
+                <span class="text-gray-700"><strong>Founder</strong> — Akamba Diaspora Advancement &amp; Development Organization — <a href="https://adado.org" target="_blank" style="color:var(--green-deep); text-decoration:underline;">ADADO.ORG</a></span>
+              </li>
+              <li style="display:flex; gap:10px; align-items:flex-start;">
+                <span style="color:var(--gold); font-size:1.1rem; flex-shrink:0; margin-top:2px;">&#10029;</span>
+                <span class="text-gray-700"><strong>Co-Advisory Board Chair</strong> — African Diaspora Coalition USA — <a href="https://adcusa.org" target="_blank" style="color:var(--green-deep); text-decoration:underline;">ADCUSA</a></span>
+              </li>
+              <li style="display:flex; gap:10px; align-items:flex-start;">
+                <span style="color:var(--gold); font-size:1.1rem; flex-shrink:0; margin-top:2px;">&#10029;</span>
+                <span class="text-gray-700"><strong>Founder</strong> — Ndalani Primary School Alumni Association, enhancing a $5 Million project building a Green Village in Yatta, Machakos County, Kenya</span>
+              </li>
+            </ul>
+          </div>
+
+          <p class="text-gray-600 leading-relaxed mb-8" style="font-size:1.05rem;">
+            Dr. Mutisya has also been instrumental in developing global partnerships, including collaborations between academic institutions and international organizations to advance peacebuilding and research innovation in higher education.
+          </p>
+
+          <!-- Back to About -->
+          <div style="display:flex; flex-wrap:wrap; gap:1rem; padding-top:1rem; border-top:1px solid #e5e7eb;">
+            <a href="about.html#leadership" class="btn-primary"><i class="fas fa-arrow-left"></i> Back to Leadership</a>
+            <a href="contact.html" class="btn-gold"><i class="fas fa-envelope"></i> Get in Touch</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote / Vision -->
+  <section style="background:linear-gradient(135deg, #004d00, var(--green-deep)); padding:5rem 0;">
+    <div class="max-w-4xl mx-auto px-4 text-center" data-fade>
+      <div style="font-size:4rem; color:var(--gold); opacity:0.3; line-height:1; margin-bottom:1rem;"><i class="fas fa-quote-left"></i></div>
+      <p class="font-heading text-2xl lg:text-3xl font-bold text-white leading-relaxed mb-6" style="font-style:italic;">
+        "We are all in this together — the diaspora's resources, the homeland's needs, one Kamba future."
+      </p>
+      <div style="width:60px; height:3px; background:var(--gold); border-radius:2px; margin:0 auto 1.5rem;"></div>
+      <p style="color:rgba(255,255,255,0.7); font-size:0.95rem;">Dr. Philliph Masila Mutisya, Ed.D. — Founder, ADADO</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/img/logo.png" alt="ADADO Logo" style="height:94px;" />
+            <div>
+              <div class="font-heading text-xl font-bold" style="color:var(--gold);">ADADO</div>
+              <div style="font-size:0.65rem; color:rgba(255,255,255,0.4); letter-spacing:0.08em;">Akamba Diaspora Advancement & Development Organization, Inc.</div>
+            </div>
+          </div>
+          <p style="color:rgba(255,255,255,0.5); font-size:0.85rem; max-width:300px; line-height:1.7;">Empowering Kamba communities through sustainable development, education, and civic engagement.</p>
+          <div class="flex gap-3 mt-4">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="font-semibold text-white mb-3">Quick Links</h5>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About ADADO</a>
+          <a href="programs.html" class="footer-link">Programs</a>
+          <a href="news-events.html" class="footer-link">News & Events</a>
+          <a href="get-involved.html" class="footer-link">Get Involved</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <div>
+          <h5 class="font-semibold text-white mb-3">Contact</h5>
+          <p class="footer-link"><i class="fas fa-map-marker-alt mr-2" style="color:var(--gold);"></i>North Carolina, USA</p>
+          <p class="footer-link"><i class="fas fa-globe-africa mr-2" style="color:var(--gold);"></i>Machakos, Kenya</p>
+          <p class="footer-link"><i class="fas fa-envelope mr-2" style="color:var(--gold);"></i>info@adado.org</p>
+        </div>
+      </div>
+    </div>
+    <div class="kenya-strip"></div>
+    <div style="background:rgba(0,0,0,0.3); padding:1rem 0; text-align:center;">
+      <p style="color:rgba(255,255,255,0.35); font-size:0.8rem;">&copy; 2025 ADADO &ndash; All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
